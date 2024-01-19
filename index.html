@@ -1,28 +1,26 @@
+<!DOCTYPE html>
+<html>
 <script src="https://d3js.org/d3.v6.min.js"></script>
-
-<script>
-  console.log(d3); // test if d3 is loaded
-  var svg;
-  // Add an SVG
-  // Add Rectangles
-  // Add Circles
-  svg = d3.select("#circle").append("svg").attr("width", 200).attr("height", 200);
-  svg.append('circle').
+<head>
+    <title> CS4804-C24-C01 </title>
+</head>
+<body>
+  <script>
+    console.log(d3); // test if d3 is loaded
+    var svg;
+    // Add an SVG
+    // Add Rectangles
+    // Add Circles
+    svg = d3.select("#circle").append("svg").attr("width", 200).attr("height", 200);
+    svg.append('circle').
     attr('cx',100).
     attr('cy',100).
     attr('r',50).
     attr('stroke','black').
     attr('fill','blue');
-  // Add Lines
-  // Add Polygons
-</script>
-
-<!DOCTYPE html>
-<html>
-<head>
-    <title> CS4804-C24-C01 </title>
-</head>
-<body>
+    // Add Lines
+    // Add Polygons
+  </script>
   <div id="circle"></div>
    <div id="content">
    
