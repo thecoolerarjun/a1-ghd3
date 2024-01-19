@@ -38,6 +38,69 @@
     // Add Lines
     // Add Polygons 
   </script>
+  <section id="myrect">
+      <div class="container">
+        <h1>Adding a rectangle with <code>append("rect")</code></h1>
+        <hr />
+
+        <p>
+          Here is how a rectangle would be drawn in pure <code>svg</code>, using
+          a <code>rect</code> element. Four arguments are required:
+          <code>x</code>, <code>y</code>, <code>width</code> and
+          <code>height</code>.
+        </p>
+        <pre
+          class="language-html"
+        ><code><xmp><rect style="fill: #69b3a2" stroke="black" x=10 y=100, width=300 height=40></rect></xmp></code></pre>
+        <svg width="800px" height="100px">
+          <rect
+            style="fill: #69b3a2"
+            stroke="black"
+            x="10"
+            y="100,"
+            width="300"
+            height="40"
+          ></rect>
+        </svg>
+
+        <p>
+          Now let's do it in javascript. It is basically the same process. Note
+          that the code below expect a div with the id 'rect' somewhere in the
+          html code.
+        </p>
+        <div>
+          <aside>&larr; Edit me!</aside>
+          <pre
+            class="language-js"
+          ><code id="code-rect" contenteditable="true"><xmp>
+// create svg element:
+var svg = d3.select("#rect").append("svg").attr("width", 800).attr("height", 200)
+
+// Add the path using this helper function
+svg.append('rect')
+  .attr('x', 10)
+  .attr('y', 120)
+  .attr('width', 600)
+  .attr('height', 40)
+  .attr('stroke', 'black')
+  .attr('fill', '#69a3b2');
+</xmp></code></pre>
+        </div>
+
+        <div id="rect"></div>
+      </div>
+    </section>
+
+    <script>
+      // Read the JS fragment at the beginning. Read it again if it changes
+      myJSParserShort("code-rect");
+      document
+        .getElementById("code-rect")
+        .addEventListener("input", function () {
+          d3.select("#rect").html("");
+          myJSParser("code-rect");
+        });
+    </script>
   
 
 </body>
