@@ -2,9 +2,16 @@
 
 <script>
   console.log(d3); // test if d3 is loaded
+  var svg;
   // Add an SVG
   // Add Rectangles
   // Add Circles
+  svg = d3.select("#circle").append("svg").attr("width", 200).attr("height", 200);
+  svg.append('circle').
+    attr('cx',100).
+    attr('cy',100).
+    attr('stroke','black').
+    attr('fill','blue');
   // Add Lines
   // Add Polygons
 </script>
