@@ -35,17 +35,16 @@
   <div id="rect">
     <script>
       // Add Rectangles
-      for (int i = 0; i < 5; i++) {
-	  svg = d3.select("#rect").
+      svg = d3.select("#rect").
 	      append("svg").
 	      attr("width", 200).
 	      attr("height", 200);
-	  
+      for (int i = 0; i < 5; i++) {
 	  svg.append('rect').
-	      attr('x',200*Math.random).
-	      attr('y',200*Math.random).
-	      attr('width',200*Math.random).
-	      attr('height',200*Math.random).
+	      attr('x',200*Math.random()).
+	      attr('y',200*Math.random()).
+	      attr('width',200*Math.random()).
+	      attr('height',200*Math.random()).
 	      attr('stroke','red').
 	      attr('fill','red');
       }
@@ -55,16 +54,15 @@
   <div id="circle">
     <script>
       // Add Circles
-      for (int i = 0; i < 5; i++) {
-	  svg = d3.select("#circle").
+      svg = d3.select("#circle").
 	      append("svg").
 	      attr("width", 200).
 	      attr("height", 200);
-	  
+      for (int i = 0; i < 5; i++) {
 	  svg.append('circle').
-	      attr('cx',200*Math.random).
-	      attr('cy',200*Math.random).
-	      attr('r',100*Math.random).
+	      attr('cx',200*Math.random()).
+	      attr('cy',200*Math.random()).
+	      attr('r',100*Math.random()).
 	      attr('stroke','red').
 	      attr('fill','red');
       }
