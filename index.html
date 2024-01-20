@@ -9,26 +9,21 @@
     console.log(d3); // test if d3 is loaded
     // Add an SVG
     var svg;
-    var r;
-    var g;
-    var b;
-    var a;
   </script>
 
   <div id="rect">
     <script>
-      // Add Lines
-      // Add Polygons
+      // Add rectangles
       svg = d3.select("#rect").
     append("svg").
     attr("width", 100).
     attr("height", 300);
       
       svg.append('rect').
-    attr('x',100).
-    attr('y',100).
-    attr('stroke','red').
-    attr('fill','orange');
+    attr('x',70).
+    attr('y',30).
+    attr('stroke','magenta').
+    attr('fill','lime');
     </script>
   </div>
   
@@ -39,15 +34,14 @@
 	      append("svg").
 	      attr("width", 200).
 	      attr("height", 200);
-      for (int i = 0; i < 5; i++) {
-	  svg.append('rect').
-	      attr('x',200*Math.random()).
-	      attr('y',200*Math.random()).
-	      attr('width',200*Math.random()).
-	      attr('height',200*Math.random()).
+
+      svg.append('rect').
+	      attr('x',100).
+	      attr('y',100).
+	      attr('width',70).
+	      attr('height',80).
 	      attr('stroke','red').
-	      attr('fill','red');
-      }
+	      attr('fill','orange');
     </script>
   </div>
   
@@ -57,16 +51,81 @@
       svg = d3.select("#circle").
 	      append("svg").
 	      attr("width", 200).
-	      attr("height", 200);
-      for (int i = 0; i < 5; i++) {
-	  svg.append('circle').
-	      attr('cx',200*Math.random()).
-	      attr('cy',200*Math.random()).
-	      attr('r',100*Math.random()).
-	      attr('stroke','red').
-	      attr('fill','red');
-      }
+    attr("height", 200);
+      
+
+      svg.append('circle').
+	      attr('cx',100).
+	      attr('cy',100).
+	      attr('r',30).
+	      attr('stroke','green').
+	      attr('fill','purple');
     </script>
+
+    <div id="circle">
+      <script>
+	// Add Circles
+      svg = d3.select("#circle").
+	      append("svg").
+	      attr("width", 200).
+    attr("height", 200);
+      
+
+      svg.append('circle').
+	      attr('cx',100).
+	      attr('cy',100).
+	      attr('r',50).
+	      attr('stroke','black').
+	      attr('fill','blue');
+      </script>
+    </div>
+
+    <div id="line">
+      <script>
+	// Add Lines
+	svg = d3.select("#line").
+    append("svg").
+    attr("width", 200).
+    attr("height", 200);
+	
+	svg.append('line').
+    attr('x1',20).
+    attr('y1',30).
+    attr('x2',40).
+    attr('y2',50).
+    attr('stroke','yellow');
+      </script>
+    </div>
+
+    <div id="line">
+      <script>
+	// Add Lines
+	svg = d3.select("#line").
+    append("svg").
+    attr("width", 200).
+    attr("height", 200);
+	
+	svg.append('line').
+    attr('x1',180).
+    attr('y1',42).
+    attr('x2',90).
+    attr('y2',76).
+    attr('stroke','turquoise');
+      </script>
+    </div>
+
+    <div id="polygon">
+      <script>
+	// Add Polygons
+	svg = d3.select("#polygon").
+    append("svg").
+    attr("width", 200).
+    attr("height", 200);
+	var points = [[10,80],[70,2],[3,45],[66,66],[8,100],[1,0],[190,30]]
+	
+	d3.polygonHull(points);
+      </script>
+    </div>
   </div>
    <div id="content">
    
