@@ -5,31 +5,76 @@
     <title> CS4804-C24-C01 </title>
 </head>
 <body>
+  <script>
+    console.log(d3); // test if d3 is loaded
+    // Add an SVG
+    var svg;
+    var r;
+    var g;
+    var b;
+    var a;
+  </script>
+
+  <div id="rect">
+    <script>
+      // Add Lines
+      // Add Polygons
+      svg = d3.select("#rect").
+    append("svg").
+    attr("width", 100).
+    attr("height", 300);
+      
+      svg.append('rect').
+    attr('x',100).
+    attr('y',100).
+    attr('stroke','red').
+    attr('fill','orange');
+    </script>
+  </div>
+  
+  <div id="rect">
+    <script>
+      // Add Rectangles
+      for (int i = 0; i < 5; i++) {
+	  svg = d3.select("#rect").
+	      append("svg").
+	      attr("width", 200).
+	      attr("height", 200);
+	  
+	  svg.append('rect').
+	      attr('x',d3.randomUniform(0,200)).
+	      attr('y',d3.randomUniform(0,200)).
+	      attr('width',d3.randomUniform(0,200)).
+	      attr('height',d3.randomUniform(0,200)).
+	      attr('stroke','rgba(d3.randomUniform(255),d3.randomUniform(255),d3.randomUniform(255),d3.randomUniform(1))').
+	      attr('fill','rgba(d3.randomUniform(255),d3.randomUniform(255),d3.randomUniform(255),d3.randomUniform(1))');
+      }
+    </script>
+  </div>
+  
   <div id="circle">
     <script>
-    console.log(d3); // test if d3 is loaded
-    var svg;
-    // Add an SVG
-    // Add Rectangles
-    // Add Circles
-    svg = d3.select("#circle").append("svg").attr("width", 200).attr("height", 200);
-    svg.append('circle').
-    attr('cx',100).
-    attr('cy',100).
-    attr('r',50).
-    attr('stroke','black').
-    attr('fill','blue');
-    // Add Lines
-    // Add Polygons
-  </script>
+      // Add Circles
+      for (int i = 0; i < 5; i++) {
+	  svg = d3.select("#circle").
+	      append("svg").
+	      attr("width", 200).
+	      attr("height", 200);
+	  
+	  svg.append('circle').
+	      attr('cx',d3.randomUniform(0,200)).
+	      attr('cy',d3.randomUniform(0,200)).
+	      attr('r',d3.randomUniform(0,100)).
+	      attr('stroke','rgba(d3.randomUniform(255),d3.randomUniform(255),d3.randomUniform(255),d3.randomUniform(1))').
+	      attr('fill','rgba(d3.randomUniform(255),d3.randomUniform(255),d3.randomUniform(255),d3.randomUniform(1))');
+      }
+    </script>
   </div>
    <div id="content">
    
    <header>Assignment 1 - d3.js</header>
 
-   <h1>Hello World</h1>
-    
-   <p>This is just a test, and it looks like it is working!</p>
+   <h1>YO!</h1>
   
    <footer>CS4804-C24-C01 &copy; 2024</footer>
     </div>
