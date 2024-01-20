@@ -23,7 +23,7 @@
     attr('x',70).
     attr('y',30).
     attr('stroke','magenta').
-    attr('fill','lime');
+    attr('fill','pink');
     </script>
   </div>
   
@@ -117,10 +117,6 @@
     <div id="polygon">
       <script>
 	// Add Polygons
-	svg = d3.select("#polygon").
-    append("svg").
-    attr("width", 200).
-    attr("height", 200);
 	var points = [[10,80],[70,2],[3,45],[66,66],[8,100],[1,0],[190,30]]
 	
 	d3.polygonHull(points);
