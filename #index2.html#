@@ -1,0 +1,45 @@
+<script src="https://d3js.org/d3.v6.min.js"></script>
+
+<script>
+  console.log(d3); // test if d3 is loaded
+  // Add an SVG
+  // Add Rectangles
+  // Add Circles
+  // Add Lines
+  // Add Polygons
+</script>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TEST</title>
+  <script src="https://d3js.org/d3.v6.min.js"></script>
+  <style>
+  </style>
+</head>
+<body>
+
+  <script>
+    console.log(d3); // test if d3 is loaded
+    var svg;
+    // Add an SVG
+    // Add Rectangles
+    // Add Circles
+    svg = d3.select("#circle").append("svg").attr("width", 200).attr("height", 200);
+    svg.append('circle').
+    attr('cx',100).
+    attr('cy',100).
+    attr('r',50).
+    attr('stroke','black').
+    attr('fill','blue');
+    // Add Lines
+    // Add Polygons 
+  </script>
+  
+  
+
+</body>
+</html>
